@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="384.0" prefWidth="360.0" styleClass="smallwin" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WriteInController">
+   <children>
+      <Label layoutX="79.0" layoutY="73.0" text="钱数：" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="55.0" layoutY="210.0" text="具体细节：" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="but_s" layoutX="79.0" layoutY="289.0" mnemonicParsing="false" onAction="#store" text="submit" />
+      <Button fx:id="but_c" layoutX="209.0" layoutY="289.0" mnemonicParsing="false" text="cancel" />
+      <TextField fx:id="text_a" layoutX="130.0" layoutY="71.0" prefHeight="23.0" prefWidth="100.0" promptText="请输入" />
+      <TextField fx:id="text_d" layoutX="131.0" layoutY="208.0" prefHeight="23.0" prefWidth="149.0" text="无" />
+      <Label layoutX="79.0" layoutY="126.0" text="种类：" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <RadioButton fx:id="rid_wage" layoutX="126.0" layoutY="126.0" mnemonicParsing="false" text="工资">
+         <toggleGroup>
+            <ToggleGroup fx:id="in_sort" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rid_bonus" layoutX="184.0" layoutY="126.0" mnemonicParsing="false" text="奖金" toggleGroup="$in_sort" />
+      <RadioButton fx:id="rid_borrow" layoutX="126.0" layoutY="154.0" mnemonicParsing="false" text="贷款" toggleGroup="$in_sort" />
+      <RadioButton fx:id="rid_others" layoutX="237.0" layoutY="154.0" mnemonicParsing="false" text="其他" toggleGroup="$in_sort" />
+      <RadioButton fx:id="rid_invest" layoutX="237.0" layoutY="126.0" mnemonicParsing="false" text="投资" toggleGroup="$in_sort" />
+      <RadioButton fx:id="rid_comp" layoutX="183.0" layoutY="154.0" mnemonicParsing="false" text="理赔" toggleGroup="$in_sort" />
+      <Label fx:id="lab_error" layoutX="75.0" layoutY="245.0" prefHeight="23.0" prefWidth="202.0" textFill="RED" />
+      <Label fx:id="lab_cong" alignment="CENTER" layoutX="60.0" layoutY="330.0" prefHeight="29.0" prefWidth="247.0" textFill="#ff6969" />
+   </children>
+</AnchorPane>

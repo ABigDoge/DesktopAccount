@@ -1,0 +1,60 @@
+.background{
+	-fx-background-image:url("/resources/images/architecture.jpg");
+	-fx-background-repeat: stretch;   
+    -fx-background-size: 900 506;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+  
+	
+}
+.button{
+	-fx-background-color:rgb(172,172,172,0.4);
+	-fx-font-size:14px;
+	-fx-text-fill:white ;
+
+}
+
+.button:hover{
+	-fx-background-color:rgb(172,172,172,0.3);
+}
+
+.button:pressed{
+	-fx-background-color:rgb(172,172,172,0.2);
+}
+#homeback{
+	-fx-background-image:url("/resources/images/architecture2.jpg");
+}
+
+.smallwin{
+	-fx-background-image:url("/resources/images/architecture3.jpg");
+	-fx-background-repeat: stretch;   
+    -fx-background-size: 900 506;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+	
+}
+
+.default-color0.chart-bar { -fx-background-color:rgb(24,24,107)}
+
+.chart-bar{
+	-fx-text-fill:white;
+}
+.chart-title {
+ -fx-font-size: 20px;
+   -fx-font-family: "Arial Black";
+   -fx-text-fill: white;
+  
+ }
+ 
+.radio-button{
+	-fx-text-fill:white;
+	-fx-font-size: 13px;
+	
+}
+
+.table-view .table-cell{
+    -fx-text-fill:rgb(80,80,80);
+    -fx-font-size:14px;
+    -fx-background-color: transparent;
+}
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="403.0" prefWidth="669.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HistoryController">
+   <children>
+      <Button layoutX="58.0" layoutY="108.0" mnemonicParsing="false" onAction="#showList" text="查看支出" />
+      <TableView fx:id="tview" layoutX="166.0" layoutY="52.0" opacity="0.56" prefHeight="280.0" prefWidth="449.0">
+        <columns>
+          <TableColumn fx:id="col_a" prefWidth="75.0" text="amount" />
+            <TableColumn fx:id="col_s" prefWidth="50.0" text="sort" />
+            <TableColumn fx:id="col_t" prefWidth="160.0" text="time" />
+          <TableColumn fx:id="col_d" prefWidth="175.0" text="detail" />
+        </columns>
+      </TableView>
+      <Button layoutX="58.0" layoutY="224.0" mnemonicParsing="false" onAction="#showlistIn" text="查看收入" />
+   </children>
+</AnchorPane>

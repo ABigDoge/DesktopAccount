@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="homeback" prefHeight="506.0" prefWidth="742.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Homepage">
+   <children>
+      <Button fx:id="but_in" layoutX="223.0" layoutY="76.0" mnemonicParsing="false" onAction="#home2InWrite" text="记录收入">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/images/write.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="but_out" layoutX="438.0" layoutY="76.0" mnemonicParsing="false" onAction="#home2Write" text="记录支出">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/images/write.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label id="greet" fx:id="infoLabel" layoutX="20.0" layoutY="14.0" opacity="0.58" prefHeight="47.0" prefWidth="221.0" text="greeting" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Light" size="36.0" />
+         </font></Label>
+      <BarChart fx:id="barChart" layoutX="20.0" layoutY="115.0" opacity="0.5" prefHeight="305.0" prefWidth="366.0" styleClass="bar-chart" title="消费情况图" titleSide="BOTTOM">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" tickLabelFill="WHITE" fx:id="xAxis">
+               <tickLabelFont>
+                  <Font size="11.0" />
+               </tickLabelFont></CategoryAxis>
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" tickLabelFill="WHITE">
+               <tickLabelFont>
+                  <Font size="11.0" />
+               </tickLabelFont></NumberAxis>
+        </yAxis>
+      </BarChart>
+      <Label layoutX="454.0" layoutY="192.0" text="本月总支出：" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="454.0" layoutY="267.0" text="本月总收入：" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="447.0" layoutY="346.0" text="花销最大方面：" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="text_out" layoutX="545.0" layoutY="182.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Button fx:id="but_his" layoutX="319.0" layoutY="420.0" mnemonicParsing="false" onAction="#home2History2" text="查看账目详情">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/images/openbook.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="but_exit" layoutX="582.0" layoutY="420.0" mnemonicParsing="false" onAction="#goBack" text="退出登录" />
+      <Button fx:id="but_re" layoutX="83.0" layoutY="420.0" mnemonicParsing="false" onAction="#refresh" text="刷新" />
+      <Label fx:id="text_in" layoutX="545.0" layoutY="257.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Label fx:id="text_most" layoutX="545.0" layoutY="336.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
